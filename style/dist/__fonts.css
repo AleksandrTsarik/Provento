@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Ubuntu";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: medium;
+  font-weight: 500;
+  src: url("../fonts/Ubuntu/Ubuntu-Medium.ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: regular;
+  font-weight: 400;
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu";
+  font-style: light;
+  font-weight: 300;
+  src: url("../fonts/Ubuntu/Ubuntu-Light.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-style: medium;
+  font-weight: 500;
+  src: url("../fonts/Open_Sans/OpenSans-Medium.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-style: regular;
+  font-weight: 400;
+  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-style: light;
+  font-weight: 300;
+  src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: bold;
+  font-weight: 700;
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: medium;
+  font-weight: 500;
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: regular;
+  font-weight: 400;
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: light;
+  font-weight: 300;
+  src: url("../fonts/Montserrat/Montserrat-Light.ttf");
+}

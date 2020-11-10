@@ -1,0 +1,189 @@
+.header
+    font-family: OpenSans
+    font-size: 12px
+    margin-bottom: 30px
+.header-top
+    background: rgba(136, 136, 136, 0.1)
+    padding: 9px 0
+    img
+        margin-bottom: -4px 
+        margin-right: 10px
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+.header-top__top-action
+    display: flex
+.top-action__lang-swith
+    margin: 0 30px 0 20px
+    position: relative
+    text-transform: capitalize
+    display: flex
+    a
+        padding: 0 5px
+        position: relative
+        &:first-child
+            &::after
+                content: ''
+                position: absolute
+                width: 1px
+                height: 100%
+                background: #222222
+                right:  -1px
+.lang
+    color: #222222
+    opacity: 0.5
+    font-size: 12px
+    &__active
+        color: #000000
+        opacity: 1
+.header__logo
+    a 
+        display: flex
+        img
+            margin-right: 10px
+.header__search-box
+    .header__search-box__inner
+        display: flex
+        button[type="submit"]
+            background-image: url('../images/lens.svg')
+            width: 20px
+            height: 20px
+            background-position: center center
+            background-repeat: no-repeat
+            background-size: cover
+            border: 0
+            background-color: transparent
+            margin-left: -35px
+            margin-bottom: 5px
+
+    input 
+        border-bottom: 1px solid rgba(34, 34, 34, 0.5)
+        color: #3C444C
+        font-style: italic
+        padding-left: 5px
+        &::placeholder
+            opacity: 0.5
+
+.header-bottom
+    .row
+        margin: 0
+    .header-bottom__search
+        justify-content: space-between
+        padding: 20px 0
+        align-items: flex-end
+.header-bottom__header-action
+    display: flex
+    .header-action__phones
+        display: flex
+        flex-direction: column
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        padding-right: 40px
+        a
+            color: #222222
+            font-family: Open Sans
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
+
+.header__search-box
+    flex: 1 0 auto
+    padding: 0 30px
+
+.btn-callme
+    background-color: $company
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15)
+    font-family: Ubuntu
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    text-transform: uppercase
+    color: #FFFFFF
+    padding: 12px 19px
+    transition: 0.3s
+    &:hover
+        opacity: 0.7
+.header-bottom__choice
+    border-top: 0.5px solid #E5E5E5
+    border-bottom: 0.5px solid #E5E5E5
+    justify-content: space-between
+    
+    line-height: 53px
+.main-menu
+    ul 
+        display: flex
+        li 
+            font-family: Open Sans
+            font-style: normal
+            padding: 0 12.5px
+            a
+                color: #7F8187
+                font-weight: 600
+                font-size: 16px
+                position: relative
+                transition: 0.3s
+
+                &:hover
+                    color: $company
+                &::after //// Удалить если не понравиться!!!!
+                    display: block
+                    content: ""
+                    background-color: $company
+                    height: 1px
+                    width: 0%
+                    transition: 0.3s
+                    transform: translateX(-50%)
+                    position: absolute
+                    left: 50%
+                &:hover:after, &:hover:before
+                    width: 100%
+                
+.header-bottom__icons
+    display: flex
+
+.btn-catalog
+    background-color: $company
+    color: #ffffff
+    font-family: Ubuntu
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    height: 100%
+    position: relative
+    text-transform: uppercase
+    padding: 0 37px
+
+    display: flex
+    align-items: center
+    transition: 0.3s
+    &:hover
+        opacity: 0.7
+.btn-catalog-burger
+    margin-right: 30px
+    div
+        width: 27px
+        height: 2px
+        background-color: #ffffff
+        margin: 5px 0
+        &:nth-child(2)
+            width: 22px
+                
+.header-bottom__icons
+    display: flex
+    align-items: center
+.header-bottom__icons-one
+    margin-left: 10px
+    display: flex
+    flex-direction: column
+    align-items: center
+    line-height: 120%
+.header-bottom__icons-one-text
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 12px
+    color: #7F8187
+
+

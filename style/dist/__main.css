@@ -1,0 +1,65 @@
+.main-wrapper .main-slider {
+  margin: 0 -15px;
+  display: flex;
+  overflow-x: scroll;
+  width: 1140px;
+  height: 580px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.main-wrapper .main-slider .main-slider__main-slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../images/slide1-bg.jpg");
+  width: 100%;
+  height: 100%;
+}
+.main-wrapper .main-slider .main-slide__title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 55px;
+  color: #FFFFFF;
+}
+.main-wrapper .main-slider .main-slide__text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+.main-wrapper .main-slider .main-slide__count {
+  font-weight: bold;
+  font-size: 46px;
+  color: #ffffff;
+}
+
+.inner {
+  height: 100%;
+  width: 1550px;
+}
+
+.title {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 34px;
+  text-align: center;
+  color: #222222;
+  border-bottom: solid 3px red;
+  text-align: left;
+  position: relative;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  width: 265px;
+  height: 2px;
+  background: green;
+  left: 0;
+  bottom: 0;
+}
