@@ -471,6 +471,10 @@ input[type="text"] {
   z-index: 5;
 }
 
+.main-screen {
+  background-color: #0153B9;
+}
+
 .title__more {
   color: rgba(51, 51, 51, 0.5);
   font-family: Open Sans;
