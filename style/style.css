@@ -1266,6 +1266,8 @@ aside {
   color: #818D94;
   padding-left: 50px;
   display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .left-bar__list__item li a::before {
@@ -1279,11 +1281,17 @@ aside {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .left-bar__list__item li:hover {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.left-bar__list__item li:hover a::before {
+  background-color: #3c92fe;
 }
 
 .main__inner {
