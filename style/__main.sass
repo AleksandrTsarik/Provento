@@ -397,7 +397,7 @@ aside
     padding-left: 0
     width: 285px
     margin-top: 30px
-    margin-right: 30px
+    //margin-right: 30px
 .left-bar__title
     font-family: Open Sans
     font-style: normal
@@ -499,8 +499,76 @@ aside
         img
             margin: auto
 
-//---------choice__box
-.choice__box
+//---------choice
+.choice
+    margin-top: 35px
+.choice__string
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #7F8187
+
+    margin-bottom: 20px
+.choice__box__top
+    display: flex
+    justify-content: space-between
+.choice__box__top__selcet
+    display: flex
+    align-items: center
+    select
+        margin-left: 10px
+.choice__box__top__selcet + .choice__box__top__selcet
+    margin-left: 30px
+.choice__box__top__block
+    display: flex
+    color: #222222
+.choice__box__top_btn
+    height: 100%
+    margin-left: 25px
+    padding-left: 25px
+    position: relative
+    &::after
+        content: ''
+        height: 100%
+        width: 1px
+        background: rgba(34, 34, 34, 0.5)
+        position: absolute
+        left: 0
+    button
+        background: none
+        height: 100%
+        padding: 0
+    button + button
+        margin-left: 10px
+.chocie__input
+    display: flex
+    input
+        color: #222222
+        border: solid 1px #EDEDED
+        padding: 10px 
+        &::placeholder
+            color: rgba(34, 34, 34, 0.5)
+    button
+        filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.25))
+        background: #EDEDED
+        border-radius: 2px
+
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+        color: rgba(34, 34, 34, 0.7)
+        margin-left: 10px
+        padding: 0 20px
+        &:hover
+            
+
+
+
+.choice__box__bottom
     display: flex
     margin: 20px 0 30px 0
 .choice__select
@@ -523,3 +591,4 @@ select
     width: 35px
     background-color: #dedede
     
+

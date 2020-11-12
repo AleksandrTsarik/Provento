@@ -139,6 +139,7 @@ img {
 button {
   cursor: pointer;
   border: none;
+  outline: none;
 }
 
 input[type="tel"],
@@ -1233,7 +1234,6 @@ aside {
   padding-left: 0;
   width: 285px;
   margin-top: 30px;
-  margin-right: 30px;
 }
 
 .left-bar__title {
@@ -1396,7 +1396,123 @@ aside {
   margin: auto;
 }
 
-.choice__box {
+.choice {
+  margin-top: 35px;
+}
+
+.choice__string {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7F8187;
+  margin-bottom: 20px;
+}
+
+.choice__box__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.choice__box__top__selcet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choice__box__top__selcet select {
+  margin-left: 10px;
+}
+
+.choice__box__top__selcet + .choice__box__top__selcet {
+  margin-left: 30px;
+}
+
+.choice__box__top__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #222222;
+}
+
+.choice__box__top_btn {
+  height: 100%;
+  margin-left: 25px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.choice__box__top_btn::after {
+  content: '';
+  height: 100%;
+  width: 1px;
+  background: rgba(34, 34, 34, 0.5);
+  position: absolute;
+  left: 0;
+}
+
+.choice__box__top_btn button {
+  background: none;
+  height: 100%;
+  padding: 0;
+}
+
+.choice__box__top_btn button + button {
+  margin-left: 10px;
+}
+
+.chocie__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chocie__input input {
+  color: #222222;
+  border: solid 1px #EDEDED;
+  padding: 10px;
+}
+
+.chocie__input input::-webkit-input-placeholder {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.chocie__input input:-ms-input-placeholder {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.chocie__input input::-ms-input-placeholder {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.chocie__input input::placeholder {
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.chocie__input button {
+  -webkit-filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.25));
+  background: #EDEDED;
+  border-radius: 2px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(34, 34, 34, 0.7);
+  margin-left: 10px;
+  padding: 0 20px;
+}
+
+.choice__box__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
