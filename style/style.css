@@ -1300,6 +1300,23 @@ aside {
   display: flex;
 }
 
+.main__listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.pages-number {
+  margin: 35px auto 85px auto;
+}
+
 .pages-number__box {
   display: -webkit-box;
   display: -ms-flexbox;
