@@ -1300,37 +1300,32 @@ aside {
   display: flex;
 }
 
-.pages__list {
+.pages__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
 }
 
-.pages__list li {
-  margin: 0 10px;
+.page__link + .page__link {
+  margin-left: 10px;
 }
 
-.pages__list a {
+.page__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page__link a {
   color: rgba(34, 34, 34, 0.5);
+  margin: auto;
 }
 
-.pages__list__item_active {
+.page__link_active {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  color: #ffffff;
-  background: #FFA800;
-}
-
-.pages__list__item_active a {
-  color: #ffffff;
+  border: solid 1px #FFA800;
 }
 
 .footer {

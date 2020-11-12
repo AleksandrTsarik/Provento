@@ -447,25 +447,18 @@ aside
 
 //--------pages
 .pages
-.pages__list
+.pages__box
     display: flex
-    align-items: center
-    font-family: Roboto
-    font-weight: normal
-    font-size: 18px
-    line-height: 21px
-    li 
-        margin: 0 10px
+.page__link + .page__link
+    margin-left: 10px   
+.page__link
+    display: flex
     a
         color: rgba(34, 34, 34, 0.5)
+        margin: auto
+    &_active
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        border: solid 1px $orange  
 
-.pages__list__item_active
-
-    width: 30px
-    height: 30px
-    border-radius: 50%
-    color: #ffffff
-    background: $orange
-    
-    a
-        color: #ffffff
