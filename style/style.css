@@ -766,7 +766,7 @@ input[type="text"] {
   margin-left: 10px;
 }
 
-.slider-items {
+.item__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1417,6 +1417,8 @@ aside {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: solid 1px #dedede;
+  padding-bottom: 15px;
 }
 
 .choice__box__top__selcet {
@@ -1516,7 +1518,7 @@ aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0 30px 0;
+  margin-top: 20px;
 }
 
 .choice__select {
@@ -1544,11 +1546,35 @@ select {
   color: rgba(34, 34, 34, 0.5);
   border: solid 1px #EDEDED;
   padding: 10px;
+  cursor: pointer;
 }
 
 .choice__select_del {
   width: 35px;
   background-color: #dedede;
+}
+
+.listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.listing .item__box {
+  margin: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.listing .item {
+  max-width: 33.3333%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.listing .item + .item {
+  margin-top: 30px;
 }
 
 .footer {
