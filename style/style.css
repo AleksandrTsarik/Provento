@@ -1233,6 +1233,7 @@ aside {
   padding-left: 0;
   width: 285px;
   margin-top: 30px;
+  margin-right: 30px;
 }
 
 .left-bar__title {
@@ -1393,6 +1394,45 @@ aside {
 .pages-number__link_prev a img,
 .pages-number__link_next a img {
   margin: auto;
+}
+
+.choice__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0 30px 0;
+}
+
+.choice__select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0 2.5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  color: rgba(34, 34, 34, 0.5);
+  border: solid 1px #EDEDED;
+  padding: 10px;
+}
+
+.choice__select_del {
+  width: 35px;
+  background-color: #dedede;
 }
 
 .footer {
