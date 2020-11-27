@@ -927,6 +927,10 @@ input[type="text"] {
   background-image: url("../images/compare_ico_gray.svg");
 }
 
+.items-tabs__tabs-row_wrap {
+  background-color: #EBF3FA;
+}
+
 .items-tabs__tabs-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -934,7 +938,6 @@ input[type="text"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #EBF3FA;
   font-family: Open Sans;
   padding: 21px 0;
 }
