@@ -429,13 +429,13 @@ input[type="text"] {
   top: 100%;
 }
 
-.header__catalog-box .field_btn:hover .menu__list__item {
-  display: block !important;
+.header__catalog-box .menu__list {
+  visibility: hidden;
 }
 
-.field_btn:hover .menu__list__item {
-  background: red !important;
-  opacity: 0 !important;
+.header__catalog-box .field_btn:hover + .menu__list {
+  display: block !important;
+  visibility: visible;
 }
 
 .field_btn {
@@ -1449,15 +1449,6 @@ aside {
           transform: translateY(-50%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.menu__list li:hover {
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-.menu__list li:hover a::before {
-  background-color: #3c92fe;
 }
 
 .main__inner {

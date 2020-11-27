@@ -159,15 +159,15 @@
         //transform: translateY(50px)
         //visibility: hidden
         //display: none
-    .menu__list__item li
+    .menu__list
         //display: none
-    .field_btn
-        &:hover .menu__list__item
-            display: block!important
-.field_btn
-    &:hover .menu__list__item
-        background: red !important
-        opacity: 0 !important
+        visibility: hidden
+        //transform: translateY(50px)
+    .field_btn:hover + .menu__list
+        display: block!important
+        visibility: visible
+        //transform: translateY(0px)
+
 
 .field_btn
     width: 100%
@@ -377,3 +377,5 @@
         color: #ffffff
         background: $company
         border: solid 1px#ffffff
+        
+
