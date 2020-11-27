@@ -138,13 +138,119 @@
                     left: 50%
                 &:hover:after, &:hover:before
                     width: 100%
-                
+.menu__list__item
+    background: #ffffff
+    li._active
+        &:hover .menu__list__item__subitem
+            display: flex
+            transform: translateX(0)
+            //visibility: visible
+
 .header-bottom__icons
     display: flex
 .header__catalog-box
     width: 23%
+    position: relative
+    .menu__list
+        position: absolute
+        z-index: 100
+        left: 0
+        top: 100%
+        //transform: translateY(50px)
+        //visibility: hidden
+        //display: none
+    .menu__list__item li
+        //display: none
+    .field_btn
+        &:hover .menu__list__item
+            display: block!important
+.field_btn
+    &:hover .menu__list__item
+        background: red !important
+        opacity: 0 !important
+
 .field_btn
     width: 100%
+
+.menu__list__item__subitem
+    position: absolute
+    right: -227%
+    height: 643px
+    top: -178%
+    background: #ffffff
+    z-index: 100
+    padding: 20px
+    display: flex
+    justify-content: space-between
+    //border: solid 1px red
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25)
+    display: none
+
+    //visibility: hidden
+    transition: 0.4s
+
+    transform: translateX(30px)
+    .subitem__block__list
+        margin: 0 -15px
+        ul
+            flex: 0 0 33.333%
+            max-width: 33.333%
+            padding: 0 15px
+        li
+            background: #ffffff
+            margin: 0
+            padding: 0 0 10px 0
+            &:hover
+                box-shadow: none
+            a
+                background: #ffffff
+                padding: 0
+                font-family: 'Roboto'
+                font-weight: 500
+                font-size: 14px
+                line-height: 16px
+
+                color: rgba(34, 34, 34, 0.5)
+                
+                &::before
+                    content: ''
+                    opacity: 0
+                &:hover
+                    color: #000000
+                    
+.subitem__block__box
+    padding-right: 15px
+
+.subitem__block__title
+    font-family: 'Roboto'
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+    color: #222222
+    padding-bottom: 20px
+
+.menu__list__item__subitem__img
+    img
+        height: 100%
+        width: 100%
+
+.subitem__block
+    padding-right: 20px
+    &:nth-child(2)
+        border-bottom: 1px dashed #E0E0E0
+        padding-bottom: 20px
+        margin-bottom: 20px
+    &:nth-child(1)
+        border-bottom: 1px dashed #E0E0E0
+        padding-bottom: 20px
+        margin-bottom: 20px
+
+    
+
+.subitem__block__list
+    display: flex
+
+
 .btn-catalog
     background-color: $company
     color: #ffffff
@@ -163,6 +269,8 @@
     height: 55px
     &:hover
         opacity: 0.7
+
+
 .btn-catalog-burger
     padding: 0 10% 0 15px
     div

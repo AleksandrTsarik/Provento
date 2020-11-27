@@ -399,6 +399,18 @@ input[type="text"] {
   width: 100%;
 }
 
+.menu__list__item {
+  background: #ffffff;
+}
+
+.menu__list__item li._active:hover .menu__list__item__subitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
 .header-bottom__icons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -407,10 +419,132 @@ input[type="text"] {
 
 .header__catalog-box {
   width: 23%;
+  position: relative;
+}
+
+.header__catalog-box .menu__list {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 100%;
+}
+
+.header__catalog-box .field_btn:hover .menu__list__item {
+  display: block !important;
+}
+
+.field_btn:hover .menu__list__item {
+  background: red !important;
+  opacity: 0 !important;
 }
 
 .field_btn {
   width: 100%;
+}
+
+.menu__list__item__subitem {
+  position: absolute;
+  right: -227%;
+  height: 643px;
+  top: -178%;
+  background: #ffffff;
+  z-index: 100;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  display: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+
+.menu__list__item__subitem .subitem__block__list {
+  margin: 0 -15px;
+}
+
+.menu__list__item__subitem .subitem__block__list ul {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  max-width: 33.333%;
+  padding: 0 15px;
+}
+
+.menu__list__item__subitem .subitem__block__list li {
+  background: #ffffff;
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.menu__list__item__subitem .subitem__block__list li:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.menu__list__item__subitem .subitem__block__list li a {
+  background: #ffffff;
+  padding: 0;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.menu__list__item__subitem .subitem__block__list li a::before {
+  content: '';
+  opacity: 0;
+}
+
+.menu__list__item__subitem .subitem__block__list li a:hover {
+  color: #000000;
+}
+
+.subitem__block__box {
+  padding-right: 15px;
+}
+
+.subitem__block__title {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding-bottom: 20px;
+}
+
+.menu__list__item__subitem__img img {
+  height: 100%;
+  width: 100%;
+}
+
+.subitem__block {
+  padding-right: 20px;
+}
+
+.subitem__block:nth-child(2) {
+  border-bottom: 1px dashed #E0E0E0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.subitem__block:nth-child(1) {
+  border-bottom: 1px dashed #E0E0E0;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.subitem__block__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .btn-catalog {
@@ -1273,23 +1407,27 @@ aside {
   padding-bottom: 10px;
 }
 
-.left-bar__list__item .list__item_active a {
+.menu__list {
+  font-family: 'Roboto';
+}
+
+.menu__list .list__item_active a {
   color: #222222;
   font-weight: 600;
 }
 
-.left-bar__list__item li {
+.menu__list li {
   font-weight: normal;
   font-size: 16px;
   background-color: #F2F5F7;
   margin: 2px 0;
-  padding: 12px 0;
+  padding: 14px 0;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.left-bar__list__item li a {
+.menu__list li a {
   line-height: 19px;
   color: #818D94;
   padding-left: 50px;
@@ -1298,7 +1436,7 @@ aside {
   transition: 0.3s;
 }
 
-.left-bar__list__item li a::before {
+.menu__list li a::before {
   content: '';
   width: 7px;
   height: 7px;
@@ -1313,12 +1451,12 @@ aside {
   transition: 0.3s;
 }
 
-.left-bar__list__item li:hover {
+.menu__list li:hover {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.left-bar__list__item li:hover a::before {
+.menu__list li:hover a::before {
   background-color: #3c92fe;
 }
 
@@ -1598,6 +1736,11 @@ select {
   margin: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.listing .item__box .item {
+  padding: 25px 0;
 }
 
 .footer {
@@ -1718,10 +1861,13 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .footer-top__network div {
-  margin: 30px 20px 0 0;
+  margin: 30px 0 0 20px;
 }
 
 .footer-top__network div a {

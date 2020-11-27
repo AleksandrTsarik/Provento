@@ -111,7 +111,7 @@
     background-repeat: no-repeat
 .circle + .circle
     margin-left: 10px
-.slider-items-wrap
+
 .slider-items
     // display: flex
     // align-items: center
@@ -121,7 +121,6 @@
     align-items: center
     margin: 0 -15px
 
-.slider-items__slide
 .item
     font-family: Open Sans
     font-weight: normal
@@ -428,17 +427,19 @@ aside
     line-height: 33px
     color: #222222
     padding-bottom: 10px
-.left-bar__list__item
+.menu__list
+    font-family: 'Roboto'
     .list__item_active
         a
             color: #222222
             font-weight: 600
     li
         font-weight: normal
+        
         font-size: 16px
         background-color: #F2F5F7
         margin: 2px 0
-        padding: 12px 0
+        padding: 14px 0
         position: relative
         transition: 0.3s
         a
@@ -590,9 +591,11 @@ aside
         padding: 0 20px
         &:hover
             filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.55))
+            
 .choice__box__bottom
     display: flex
     margin-top: 20px
+
 .choice__select
     display: flex
     flex: 1 1 auto
@@ -603,6 +606,7 @@ aside
     font-weight: normal
     font-size: 12px
     line-height: 14px
+
 select
     display: flex
     flex: 1 1 auto
@@ -610,6 +614,7 @@ select
     border: solid 1px #EDEDED
     padding: 10px
     cursor: pointer
+
 .choice__select_del
     width: 35px
     background-color: #dedede
@@ -621,3 +626,6 @@ select
     .item__box
         margin: 0
         flex-wrap: wrap
+        margin: 0 -15px
+        .item
+            padding: 25px 0
