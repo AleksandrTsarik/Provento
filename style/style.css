@@ -1,87 +1,4 @@
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: bold;
-  font-weight: 700;
-  src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: medium;
-  font-weight: 500;
-  src: url("../fonts/Ubuntu/Ubuntu-Medium.ttf");
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: regular;
-  font-weight: 400;
-  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: light;
-  font-weight: 300;
-  src: url("../fonts/Ubuntu/Ubuntu-Light.ttf");
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  font-style: bold;
-  font-weight: 700;
-  src: url("../fonts/Open_Sans/OpenSans-Bold.ttf");
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  font-style: medium;
-  font-weight: 500;
-  src: url("../fonts/Open_Sans/OpenSans-Medium.ttf");
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  font-style: regular;
-  font-weight: 400;
-  src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  font-style: light;
-  font-weight: 300;
-  src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: bold;
-  font-weight: 700;
-  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: medium;
-  font-weight: 500;
-  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: regular;
-  font-weight: 400;
-  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: light;
-  font-weight: 300;
-  src: url("../fonts/Montserrat/Montserrat-Light.ttf");
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 body {
   margin: 0 auto;
   width: 100vw;
@@ -89,7 +6,7 @@ body {
   background-color: #ffffff;
   max-width: 100%;
   min-width: 300px;
-  font-family: 'OpenSans', 'Arial', 'Sans-Serif';
+  font-family: 'Open Sans', 'Arial', 'Sans-Serif';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,8 +248,7 @@ input[type="text"] {
   background-color: #0153B9;
   -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
-  font-family: Ubuntu;
-  font-style: normal;
+  font-family: 'Ubuntu';
   font-weight: normal;
   font-size: 16px;
   text-transform: uppercase;
@@ -363,7 +279,7 @@ input[type="text"] {
 }
 
 .main-menu ul li {
-  font-family: 'OpenSans';
+  font-family: 'Open Sans';
   font-style: normal;
   padding: 0 12.5px;
 }
@@ -546,8 +462,7 @@ input[type="text"] {
 .btn-catalog {
   background-color: #0153B9;
   color: #ffffff;
-  font-family: Ubuntu;
-  font-style: normal;
+  font-family: 'Ubuntu';
   font-weight: 500;
   font-size: 16p;
   position: relative;
@@ -562,6 +477,7 @@ input[type="text"] {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   height: 55px;
+  white-space: nowrap;
 }
 
 .btn-catalog:hover {
@@ -690,8 +606,7 @@ input[type="text"] {
 }
 
 .offer__title {
-  font-family: Ubuntu;
-  font-style: normal;
+  font-family: 'Ubuntu';
   font-weight: bold;
   font-size: 36px;
   line-height: 55px;
@@ -700,7 +615,6 @@ input[type="text"] {
 
 .offer__subtitle {
   font-family: 'OpenSans';
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -708,8 +622,7 @@ input[type="text"] {
 }
 
 .offer__in-catalog-btn {
-  font-family: Ubuntu;
-  font-style: normal;
+  font-family: 'Ubuntu';
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -731,9 +644,8 @@ input[type="text"] {
 }
 
 .title {
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   width: 100%;
-  font-style: normal;
   font-weight: 500;
   font-size: 30px;
   line-height: 34px;
@@ -763,8 +675,7 @@ input[type="text"] {
 
 .title__more {
   color: rgba(51, 51, 51, 0.5);
-  font-family: Open Sans;
-  font-style: normal;
+  font-family: 'Open Sans';
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -788,7 +699,6 @@ input[type="text"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 580px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -webkit-box-pack: justify;
@@ -803,11 +713,11 @@ input[type="text"] {
   background-size: cover;
   width: 100%;
   height: 100%;
+  padding-bottom: 44px;
 }
 
 .main-slide__title {
-  font-family: Ubuntu;
-  font-style: normal;
+  font-family: 'Ubuntu';
   font-weight: bold;
   font-size: 36px;
   line-height: 55px;
@@ -817,8 +727,7 @@ input[type="text"] {
 }
 
 .main-slide__text {
-  font-family: Open Sans;
-  font-style: normal;
+  font-family: 'Open Sans';
   font-weight: normal;
   font-size: 18px;
   line-height: 32px;
@@ -835,7 +744,7 @@ input[type="text"] {
 
 .main-slide__img {
   position: absolute;
-  bottom: -14px;
+  bottom: -5px;
   right: 0;
   width: 58%;
 }
@@ -908,7 +817,7 @@ input[type="text"] {
 }
 
 .item {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-weight: normal;
 }
 
@@ -1093,7 +1002,7 @@ input[type="text"] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   padding: 21px 0;
 }
 
@@ -1154,7 +1063,7 @@ input[type="text"] {
 }
 
 .about-info__link a {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1199,8 +1108,7 @@ input[type="text"] {
 }
 
 .feature-text {
-  font-family: Ubuntu;
-  font-style: normal;
+  font-family: 'Ubuntu';
   font-weight: normal;
   font-size: 18px;
   line-height: 128.5%;
@@ -1251,7 +1159,7 @@ input[type="text"] {
 }
 
 .widjet-blogs-one-name {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -1264,7 +1172,7 @@ input[type="text"] {
 }
 
 .widjet-blogs-one-text {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1350,8 +1258,7 @@ input[type="text"] {
 .btn-sign {
   background: #0153B9;
   color: #ffffff;
-  font-family: Ubuntu;
-  font-style: normal;
+  font-family: 'Ubuntu';
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -1395,7 +1302,7 @@ aside {
 }
 
 .left-bar__title {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -1563,7 +1470,7 @@ aside {
 }
 
 .choice__string {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -1794,7 +1701,7 @@ select {
   color: #2D2D2D;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1884,7 +1791,7 @@ select {
 }
 
 .footer-botom a {
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
