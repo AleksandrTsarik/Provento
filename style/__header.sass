@@ -156,18 +156,11 @@
         z-index: 100
         left: 0
         top: 100%
-        //transform: translateY(50px)
-        //visibility: hidden
-        //display: none
-    .menu__list
-        //display: none
-        visibility: hidden
-        //transform: translateY(50px)
-    .field_btn:hover + .menu__list
-        display: block!important
-        visibility: visible
-        //transform: translateY(0px)
+        display: none
 
+.submenu__open
+    &:hover .menu__list
+        display: block
 
 .field_btn
     width: 100%
@@ -182,13 +175,10 @@
     padding: 20px
     display: flex
     justify-content: space-between
-    //border: solid 1px red
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25)
     display: none
-
     //visibility: hidden
     transition: 0.4s
-
     transform: translateX(30px)
     .subitem__block__list
         margin: 0 -15px
@@ -209,7 +199,6 @@
                 font-weight: 500
                 font-size: 14px
                 line-height: 16px
-
                 color: rgba(34, 34, 34, 0.5)
                 
                 &::before
@@ -245,11 +234,8 @@
         padding-bottom: 20px
         margin-bottom: 20px
 
-    
-
 .subitem__block__list
     display: flex
-
 
 .btn-catalog
     background-color: $company
@@ -257,8 +243,7 @@
     font-family: Ubuntu
     font-style: normal
     font-weight: 500
-    font-size: 16px
-    //height: 100%
+    font-size: 16p
     position: relative
     text-transform: uppercase
     //padding: 0 37px
@@ -269,7 +254,6 @@
     height: 55px
     &:hover
         opacity: 0.7
-
 
 .btn-catalog-burger
     padding: 0 10% 0 15px
@@ -319,8 +303,6 @@
 
 //-----offer
 .offer
-    //background-color: #0153B9
-
     background-image: url('../images/offer_bg.png')
     background-position: center center
     background-repeat: no-repeat
