@@ -503,7 +503,8 @@ input[type="text"] {
   }
 }
 
-.header__catalog-box .menu__list {
+.menu__list__open,
+.menu__listing__open {
   position: absolute;
   z-index: 100;
   left: 0;
@@ -511,8 +512,18 @@ input[type="text"] {
   display: none;
 }
 
-.submenu__open:hover .menu__list {
+.submenu__open:hover .menu__list__open {
   display: block;
+}
+
+.menu__listing__open {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .submenu__listing__open:hover .menu__listing__open {
+    display: block;
+  }
 }
 
 .field_btn {
@@ -792,8 +803,26 @@ input[type="text"] {
   position: relative;
 }
 
+@media screen and (max-width: 991px) {
+  .offer__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 0;
+  }
+}
+
 .offer__logo {
   overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+  .offer__logo {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .offer__logo img {
@@ -811,12 +840,32 @@ input[type="text"] {
   width: 38%;
 }
 
+@media screen and (max-width: 991px) {
+  .offer__info {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+  }
+}
+
 .offer__title {
   font-family: 'Ubuntu';
   font-weight: bold;
   font-size: 36px;
   line-height: 55px;
   color: #FFFFFF;
+}
+
+@media screen and (max-width: 1200px) {
+  .offer__title {
+    line-height: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .offer__title {
+    width: 100%;
+  }
 }
 
 .offer__subtitle {
@@ -1696,6 +1745,24 @@ input[type="text"] {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 991px) {
+  .js-slider-brands {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .slider-brands__slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding: 0 15px;
+  }
+}
+
 .widjet-brands-wrap {
   margin: 60px 0;
 }
@@ -1708,6 +1775,12 @@ aside {
   padding-left: 0;
   width: 285px;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  .left-bar {
+    display: none;
+  }
 }
 
 .left-bar__title {
@@ -1734,7 +1807,7 @@ aside {
   font-size: 16px;
   background-color: #F2F5F7;
   margin: 2px 0;
-  padding: 14px 0;
+  padding: 14px 15px 14px 0;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1815,6 +1888,12 @@ aside {
   margin: 0 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .pages-number__inner {
+    margin: 0 5px;
+  }
+}
+
 .pages-number__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1859,6 +1938,14 @@ aside {
           box-sizing: border-box;
 }
 
+@media screen and (max-width: 768px) {
+  .pages-number__link_prev,
+  .pages-number__link_next {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .pages-number__link_prev a,
 .pages-number__link_next a {
   display: block;
@@ -1899,6 +1986,13 @@ aside {
   padding-bottom: 15px;
 }
 
+@media screen and (max-width: 991px) {
+  .choice__box__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .choice__box__top__selcet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1923,11 +2017,41 @@ aside {
   color: #222222;
 }
 
+@media screen and (max-width: 991px) {
+  .choice__box__top__block {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .choice__box__top__block__select {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .choice__box__top__block__select .choice__box__top__selcet {
+    width: 100%;
+    margin: 5px 0 5px 0;
+  }
+}
+
 .choice__box__top_btn {
   height: 100%;
   margin-left: 25px;
   padding-left: 25px;
   position: relative;
+}
+
+@media screen and (max-width: 575px) {
+  .choice__box__top_btn {
+    display: none;
+  }
 }
 
 .choice__box__top_btn::after {
@@ -2006,6 +2130,13 @@ aside {
   margin-top: 20px;
 }
 
+@media screen and (max-width: 1400px) {
+  .choice__box__bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .choice__select {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2019,6 +2150,12 @@ aside {
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
+}
+
+@media screen and (max-width: 1400px) {
+  .choice__select {
+    margin: 0.25px;
+  }
 }
 
 select {
@@ -2036,6 +2173,7 @@ select {
 
 .choice__select_del {
   width: 35px;
+  height: 39px;
   background-color: #dedede;
 }
 

@@ -203,16 +203,26 @@
     @media screen and ( max-width: 575px )
         width: 100%
         margin-bottom: 25px
-    .menu__list
-        position: absolute
-        z-index: 100
-        left: 0
-        top: 100%
-        display: none   
+.menu__list__open,
+.menu__listing__open
+    position: absolute
+    z-index: 100
+    left: 0
+    top: 100%
+    display: none   
 
 .submenu__open
-    &:hover .menu__list
+    &:hover .menu__list__open
         display: block
+
+.menu__listing__open
+    display: none
+
+.submenu__listing__open
+    @media screen and ( max-width: 1400px )
+        &:hover .menu__listing__open
+            display: block
+
 
 .field_btn
     width: 100%
@@ -385,23 +395,35 @@
     justify-content: space-between
 
     position: relative
+    @media screen and ( max-width: 991px )
+        flex-wrap: wrap
+        justify-content: center
+        padding: 10px 0
 .offer__logo
     overflow: hidden
+    @media screen and ( max-width: 991px )
+        width: 100%
+        text-align: center
     img
-        // object-fit: fill
-        // width: 100%
-        // height: 100%
         margin-bottom: -18px
 .offer__info
     display: flex
     flex-direction: column
     width: 38%
+    @media screen and ( max-width: 991px )
+        width: 100%
+        text-align: center
+        margin: 25px 0
 .offer__title
     font-family: 'Ubuntu'
     font-weight: bold
     font-size: 36px
     line-height: 55px
     color: #FFFFFF
+    @media screen and ( max-width: 1200px )
+        line-height: 100%
+    @media screen and ( max-width: 991px )
+        width: 100%
 .offer__subtitle
     font-family: 'OpenSans'
     font-weight: 600
