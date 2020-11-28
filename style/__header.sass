@@ -37,6 +37,8 @@
         color: #000000
         opacity: 1
 .header__logo
+    @media screen and ( max-width: 575px )
+        margin: 0 auto
     a 
         display: flex
         img
@@ -74,12 +76,22 @@
         align-items: flex-end
 .header-bottom__header-action
     display: flex
+    @media screen and ( max-width: 870px )
+        width: 100%
+        margin-top: 25px
+        justify-content: space-between
+    .header-action__callme
+        @media screen and ( max-width: 870px )
+            order: 1
     .header-action__phones
         display: flex
         flex-direction: column
         letter-spacing: 0.02em
         text-transform: uppercase
         padding-right: 40px
+        @media screen and ( max-width: 870px )
+            order: 2
+            padding-right: 0
         a
             color: #222222
             font-family: 'OpenSans'
@@ -90,6 +102,12 @@
 .header__search-box
     flex: 1 0 auto
     padding: 0 30px
+    @media screen and ( max-width: 870px )
+        padding-right: 0
+    @media screen and ( max-width: 575px )
+        flex: 1 0 100%
+        padding: 0
+        margin-top: 25px
 .btn-callme
     background-color: $company
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15)
@@ -107,15 +125,36 @@
     border-bottom: 0.5px solid #E5E5E5
     justify-content: space-between
     margin-bottom: 30px
-
     line-height: 53px
+    @media screen and ( max-width: 1400px )
+        border: none
+    @media screen and ( max-width: 1280px )
+        flex-wrap: wrap
+
+.main-menu-wrap
+    @media screen and ( max-width: 1400px )
+        order: 3
+        width: 100%
+        margin-top: 20px
+        border-top: 0.5px solid #E5E5E5
+        border-bottom: 0.5px solid #E5E5E5
 .main-menu
+    @media screen and ( max-width: 575px )
+        margin: 20px 0
     ul 
         display: flex
+        @media screen and ( max-width: 1400px )
+            justify-content: space-between
+        @media screen and ( max-width: 575px )
+            flex-direction: column
+            align-items: center
+            
         li 
             font-family: 'Open Sans'
             font-style: normal
             padding: 0 12.5px
+            @media screen and ( max-width: 1300px )
+                padding: 0
             a
                 color: #7F8187
                 font-weight: 600
@@ -135,6 +174,8 @@
                     transform: translateX(-50%)
                     position: absolute
                     left: 50%
+                    @media screen and ( max-width: 575px )
+                        bottom: 0
                 &:hover:after, &:hover:before
                     width: 100%
 .menu__list__item
@@ -147,15 +188,25 @@
 
 .header-bottom__icons
     display: flex
+    @media screen and ( max-width: 1300px )
+        //width: 50%
+        justify-content: flex-end
+    @media screen and ( max-width: 620px )
+        margin-top: 20px
+        width: 100%
+        justify-content: space-between
 .header__catalog-box
-    width: 23%
+    width: 290px
     position: relative
+    @media screen and ( max-width: 575px )
+        width: 100%
+        margin-bottom: 25px
     .menu__list
         position: absolute
         z-index: 100
         left: 0
         top: 100%
-        display: none
+        display: none   
 
 .submenu__open
     &:hover .menu__list
@@ -241,7 +292,7 @@
     color: #ffffff
     font-family: 'Ubuntu'
     font-weight: 500
-    font-size: 16p
+    font-size: 16px
     position: relative
     text-transform: uppercase
     //padding: 0 37px
