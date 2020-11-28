@@ -3,6 +3,8 @@
     padding: 25px
     font-family: Roboto
     color: #9A9A9A
+    @media screen and ( max-width: 768px )
+        padding: 25px 0
 .footer__list_bb
     a
         color: #9A9A9A
@@ -54,13 +56,20 @@
     color: #FFFFFF
     padding-bottom: 35px
     padding-top: 20px
+    @media screen and ( max-width: 768px )
+        padding-bottom: 15px
 .footer-top__nav
 .footer-top__nav__inner
     display: flex
     justify-content: space-between
+    @media screen and ( max-width: 991px )
+        flex-wrap: wrap
 .footer-top__nav__list
     flex: 0 0 33.333%
     max-width: 33.333%
+    @media screen and ( max-width: 575px )
+        flex: 1 0 100%
+        max-width: 100%
 .footer-top
     li
         font-style: normal
@@ -69,14 +78,19 @@
         line-height: 21px
         padding: 5px 0
 .footer-top__contact
-    //margin-left: auto
     text-align: right
+    @media screen and ( max-width: 991px )
+        text-align: left
 .footer-top__network
     display: flex
     align-items: center
     justify-content: flex-end
+    @media screen and ( max-width: 991px )
+        justify-content: flex-start
     div
         margin: 30px 0 0 20px
+        @media screen and ( max-width: 991px )
+            margin: 30px 20px 0 0
         a
             text-decoration: none
             &:hover
@@ -92,12 +106,29 @@
         line-height: 16px
         text-transform: uppercase
         color: #CCCCCC
+        @media screen and ( max-width: 991px )
+            font-size: 13px
 .footer-botom_fl
     align-items: center
     justify-content: space-between
     padding: 0 15px
     div + div
         margin-top: 5px
+    @media screen and ( max-width: 768px )
+        flex-wrap: wrap
+
+.footer-botom__link
+    @media screen and ( max-width: 768px )
+        width: 100%
+        order: 1
+        margin-bottom: 15px
+.footer-botom__visa
+    @media screen and ( max-width: 768px )
+        width: 100%
+        order: 3
+        margin-top: 15px
+
 .footer-botom__more
-    div + div
-        margin-top: 5px
+    @media screen and ( max-width: 768px )
+        width: 100%
+        order: 2

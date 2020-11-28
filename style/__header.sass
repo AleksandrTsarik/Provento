@@ -219,8 +219,9 @@
 
 .menu__list__item__subitem
     position: absolute
-    right: -227%
+    right: -690px
     height: 643px
+    width: 690px
     top: -178%
     background: #ffffff
     z-index: 100
@@ -228,16 +229,30 @@
     display: flex
     justify-content: space-between
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25)
+
     display: none
-    //visibility: hidden
-    transition: 0.4s
-    transform: translateX(30px)
+    @media screen and ( max-width: 1030px )
+        top: 100%
+        right: -400px
+    @media screen and ( max-width: 768px )
+        width: auto
+        right: -50%
+        height: auto
+    @media screen and ( max-width: 575px )
+        right: 0
+        width: 100%
+        
     .subitem__block__list
         margin: 0 -15px
+        @media screen and ( max-width: 575px )
+            flex-wrap: wrap
         ul
             flex: 0 0 33.333%
             max-width: 33.333%
             padding: 0 15px
+            @media screen and ( max-width: 575px )
+                flex: 1 0 100%
+                max-width: 100%
         li
             background: #ffffff
             margin: 0
@@ -271,6 +286,8 @@
     padding-bottom: 20px
 
 .menu__list__item__subitem__img
+    @media screen and ( max-width: 768px )
+        display: none
     img
         height: 100%
         width: 100%
