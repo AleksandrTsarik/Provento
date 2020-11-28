@@ -1760,11 +1760,50 @@ input[type="text"] {
             flex: 0 0 33.333%;
     max-width: 33.333%;
     padding: 0 15px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .slider-brands__slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .slider-brands__slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
 .widjet-brands-wrap {
   margin: 60px 0;
+}
+
+.widjet-brands__inner {
+  position: relative;
+}
+
+.widjet-brands__inner .circle_left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.widjet-brands__inner .circle_right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 aside {
@@ -2077,6 +2116,9 @@ aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 .chocie__input input {
@@ -2154,7 +2196,7 @@ aside {
 
 @media screen and (max-width: 1400px) {
   .choice__select {
-    margin: 0.25px;
+    margin: 1px;
   }
 }
 

@@ -493,9 +493,29 @@
         flex: 0 0 33.333%
         max-width: 33.333%
         padding: 0 15px
+        text-align: center
+    @media screen and ( max-width: 575px )
+        flex: 0 0 50%
+        max-width: 50%
+    @media screen and ( max-width: 470px )
+        flex: 0 0 100%
+        max-width: 100%
 
 .widjet-brands-wrap
     margin: 60px 0
+
+.widjet-brands__inner
+    position: relative
+    .circle_left
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+    .circle_right
+        position: absolute
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
 
 //---------aside
 aside
@@ -680,6 +700,7 @@ aside
         margin-left: 10px
 .chocie__input
     display: flex
+    flex: 1 1 100%
     input
         color: #222222
         border: solid 1px #EDEDED
@@ -719,7 +740,7 @@ aside
     font-size: 12px
     line-height: 14px
     @media screen and ( max-width: 1400px )
-        margin: 0.25px 
+        margin: 1px 
 
 select
     display: flex
