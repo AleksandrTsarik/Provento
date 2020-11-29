@@ -215,6 +215,14 @@
     font-weight: 600
     font-size: 16px
     line-height: 22px
+
+.item-buy-btn-text
+    color: $orange
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    padding: 0 23px
+
 .item-buy-btn
     border: solid 2px $orange
     background: 0
@@ -225,8 +233,13 @@
     padding: 0
     margin: 20px 0
     transition: 0.3s
+    background-color: #ffffff
     &:hover
-        box-shadow: 0 0 5px rgba(0, 0, 0,0.5 )
+        box-shadow: 0 0 5px rgba(0, 0, 0,0.2 )
+        background-color: $orange
+    &:hover .item-buy-btn-text
+        color: #ffffff
+
 .item-buy-btn-ico
     background-color: $orange
     width: 45px
@@ -235,12 +248,8 @@
     background-image: url('../images/basket_ico_white.svg')
     background-position: center center
     background-repeat: no-repeat 
-.item-buy-btn-text
-    color: $orange
-    font-weight: 600
-    font-size: 16px
-    line-height: 22px
-    padding: 0 23px
+
+
 .item-action__buy-box
     display: flex
     align-items: center
@@ -307,6 +316,11 @@
     background: #FFFFFF
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
     padding: 25px 20px
+    .item__photo
+        width: 145px
+        height: 245px
+        margin: 0 auto 20px auto
+        padding: 0
 .item-full-substrate_ico
     position: absolute
     top: 20px
@@ -481,12 +495,13 @@
     top: -15px
 
 .js-slider-brands
+    width: 82%
+    margin: 0 auto
     display: flex
     align-items: center
     justify-content: space-between
     @media screen and ( max-width: 991px )
         flex-wrap: wrap
-        margin: 0 -15px
 
 .slider-brands__slide
     @media screen and ( max-width: 991px ) 
