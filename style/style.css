@@ -1765,6 +1765,13 @@ input[type="text"] {
   top: -15px;
 }
 
+@media screen and (max-width: 991px) {
+  .circle__box {
+    top: auto;
+    bottom: 0;
+  }
+}
+
 .js-slider-brands {
   width: 82%;
   margin: 0 auto;
