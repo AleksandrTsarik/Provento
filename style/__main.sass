@@ -92,12 +92,18 @@
     bottom: -5px
     right: 0
     width: 58%
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2)
+    transition: 0.8s
     @media screen and ( max-width: 992px )
         position: relative
         margin-left: 50%
         transform: translateX(-50%)
         margin-bottom: -43px
         width: 100%
+
+.main-slide__img._active
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+
 .title-block
     display: flex
     justify-content: space-between
@@ -160,10 +166,16 @@
             margin: auto
 
 .items-tabs__item-wrap
+    opacity: 0.3
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 3)
+    transition: 0.7s
     @media screen and ( max-width: 992px )
         margin-top: 15px
         margin-bottom: 15px
 
+.items-tabs__item-wrap._active
+    opacity: 1
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
 .item__photo_bg
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15)
     margin-bottom: 25px
@@ -279,9 +291,12 @@
     font-family: 'Open Sans'
     padding: 21px 0
     flex-wrap: wrap
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 3)
+    transition: 0.8s
     @media screen and ( max-width: 840px )
         display: none
-
+.items-tabs__tabs-row._active
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
 .items-tabs__tabs-row__open
     display: none
     @media screen and ( max-width: 840px )
@@ -371,6 +386,12 @@
     box-shadow: 0 0 3px rgba(0,0 ,0 ,0.25 )
 .feature-wrap
     display: flex
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 3)
+    opacity: 0.3
+    transition: 0.7s
+.feature-wrap._active
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    opacity: 1
 .feature-text
     font-family: 'Ubuntu'
     font-weight: normal
@@ -507,6 +528,9 @@
         flex-wrap: wrap
 
 .slider-brands__slide
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 3)
+    opacity: 0.2
+    transition: 1s
     @media screen and ( max-width: 991px ) 
         flex: 0 0 33.333%
         max-width: 33.333%
@@ -518,6 +542,10 @@
     @media screen and ( max-width: 470px )
         flex: 0 0 100%
         max-width: 100%
+
+.slider-brands__slide._active
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    opacity: 1
 
 .widjet-brands-wrap
     margin: 60px 0
@@ -588,7 +616,7 @@ aside
                 transform: translateY(-50%)
                 transition: 0.3s
         &:hover
-            box-shadow: 0 0 5px rgba(black, 0.5)
+            box-shadow: 0 0 5px rgba(black, 0.2)
 
         &:hover a
             &::before
