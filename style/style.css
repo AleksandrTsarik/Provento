@@ -1224,6 +1224,14 @@ input[type="text"] {
   -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   margin-bottom: 25px;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  opacity: 0.1;
+}
+
+.item__photo_bg._active {
+  background-color: #ffffff;
+  opacity: 1;
 }
 
 .item__info {
