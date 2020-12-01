@@ -40,3 +40,4 @@ if (animItems.length > 0) {
     }, 300);
 
 }
+
