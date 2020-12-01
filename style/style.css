@@ -789,7 +789,13 @@ input[type="text"] {
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: rgba(34, 34, 34, 0.5);
+}
+
+.crumbs__item img {
+  margin-bottom: -2px;
 }
 
 .crumbs__item + .crumbs__item {
