@@ -1025,6 +1025,11 @@ input[type="checkbox"] {
   }
 }
 
+.title .title__small {
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .main-screen {
   background-color: #0153B9;
 }
@@ -2432,6 +2437,10 @@ select {
   width: 43%;
 }
 
+.special-offer__input__box {
+  width: 67%;
+}
+
 .special-offer__text {
   position: relative;
   color: #0153B9;
@@ -2483,10 +2492,10 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 25px;
 }
 
 .special-offer__input {
-  font-family: Open Sans;
   font-weight: 500;
   font-size: 14px;
   line-height: 19px;
@@ -2565,6 +2574,41 @@ select {
 .special-offer__item__foto img {
   height: 100%;
   margin: auto;
+}
+
+.description .items-tabs__tabs-row {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.description .items-tabs__tabs-row div {
+  margin-right: 50px;
+}
+
+table {
+  font-family: 'Open Sans';
+  border-collapse: collapse;
+  margin: 55px 0 90px 0;
+}
+
+table th {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222222;
+  text-align: left;
+  border-bottom: 1px solid #EDEDED;
+  padding: 10px 100px 10px 0;
+}
+
+table td {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: rgba(34, 34, 34, 0.8);
+  border-bottom: 1px solid #EDEDED;
 }
 
 .footer {
