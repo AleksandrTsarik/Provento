@@ -123,7 +123,7 @@ input[type="checkbox"] {
   position: absolute;
   width: 17px;
   height: 17px;
-  border: solid 1px #0153B9;
+  border: solid 1px #E7E7E7;
   margin-left: -27px;
 }
 
@@ -153,6 +153,10 @@ input[type="checkbox"] {
 .btn__add:hover {
   color: #FFA800;
   background: #ffffff;
+}
+
+.our-blog {
+  margin-bottom: 75px;
 }
 
 .header {
