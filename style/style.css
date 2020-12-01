@@ -70,6 +70,10 @@ input[type="text"] {
   border: 0;
 }
 
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 110px;
@@ -95,6 +99,60 @@ input[type="text"] {
 
 .header-bottom__img {
   height: 25px;
+}
+
+.check {
+  padding-left: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.check__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+
+.check__box {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border: solid 1px #0153B9;
+  margin-left: -27px;
+}
+
+.check__input:checked + .check__box {
+  background-image: url("../images/checked.svg");
+  background-color: #0153B9;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.btn__add {
+  color: #ffffff;
+  background: #FFA800;
+  -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  padding: 14px 47px;
+  border: solid 1px #FFA800;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.btn__add:hover {
+  color: #FFA800;
+  background: #ffffff;
 }
 
 .header {
@@ -2344,6 +2402,169 @@ select {
 
 .listing .item__box .item {
   padding: 25px 0;
+}
+
+.special-offer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 20px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.special-offer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 75px;
+}
+
+.special-offer__item__box {
+  width: 43%;
+}
+
+.special-offer__text {
+  position: relative;
+  color: #0153B9;
+  background: #F1F1F1;
+  padding: 12px 49px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  white-space: nowrap;
+}
+
+.special-offer__text::after {
+  content: '';
+  position: absolute;
+  right: -49px;
+  bottom: 0;
+  border: 24px solid transparent;
+  border-left: 25px solid #F1F1F1;
+}
+
+.special-offer__strip {
+  width: 69%;
+  height: 2px;
+  background: #F1F1F1;
+}
+
+.special-offer__input__price {
+  margin-left: auto;
+}
+
+.special-offer__input__box__total__price {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+  padding-right: 50px;
+}
+
+.special-offer__input__box__total__price span {
+  color: #0153B9;
+  font-weight: 700;
+}
+
+.special-offer__input__box__total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.special-offer__input {
+  font-family: Open Sans;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.special-offer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.special-offer__item__add {
+  color: #222222;
+  position: relative;
+  width: 19px;
+  height: 3px;
+  border-radius: 50px;
+  background: #222222;
+  margin: 0 15px 15px;
+}
+
+.special-offer__item__add::before {
+  content: '';
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background: #222222;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.special-offer__input__price {
+  font-weight: 600;
+}
+
+.special-offer__item__result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.special-offer__item__result img {
+  width: 8px;
+  height: 8px;
+  margin-bottom: 2px;
+}
+
+.special-offer__item__result div {
+  margin-left: 3px;
+}
+
+.special-offer__item__result__numb {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 19px;
+  color: rgba(34, 34, 34, 0.5);
+}
+
+.special-offer__item__foto {
+  width: 80px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.special-offer__item__foto img {
+  height: 100%;
+  margin: auto;
 }
 
 .footer {

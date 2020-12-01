@@ -817,3 +817,126 @@ select
         margin: 0 -15px
         .item
             padding: 25px 0
+
+//-------------item-page
+
+.special-offer__row
+    display: flex
+    align-items: center
+    width: 100%
+    margin: 20px 0
+    justify-content: space-between
+
+.special-offer__inner
+    display: flex
+    justify-content: space-between
+    margin-bottom: 75px
+
+.special-offer__item__box
+    width: 43%
+
+.special-offer__input__box"
+    width: 67%
+
+.special-offer__text 
+    position: relative
+    color: $company
+    background:  #F1F1F1
+    padding: 12px 49px
+    font-family: 'Open Sans'
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    white-space: nowrap
+    &::after 
+        content: ''
+        position: absolute
+        right: -49px
+        bottom: 0
+        border: 24px solid transparent
+        border-left: 25px solid #F1F1F1 
+
+.special-offer__strip
+    width: 69%
+    height: 2px
+    background: #F1F1F1 
+
+.special-offer__input__price
+    margin-left: auto
+
+.special-offer__input__box__total__price
+    // font-family: 'Open Sans'
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #222222
+    padding-right: 50px
+    margin-top: 25px
+    span
+        color: $company
+        font-weight: 700
+
+.special-offer__input__box__total
+    display: flex
+    align-items: center
+
+.special-offer__input
+    //font-family: 'Open Sans'
+    font-weight: 500
+    font-size: 14px
+    line-height: 19px
+    color: #222222
+
+    margin-bottom: 15px
+
+.special-offer__item
+    display: flex
+    align-items: center
+
+.special-offer__item__add
+    color: #222222
+    position: relative
+    width: 19px
+    height: 3px
+    border-radius: 50px
+    background: #222222
+
+    margin: 0 15px 15px 
+    &::before
+        content: ''
+        width: 100%
+        height: 3px
+        position: absolute
+        background: #222222
+        transform: rotate(90deg)
+
+
+
+.special-offer__input__price
+    font-weight: 600
+
+.special-offer__item__result
+    display: flex
+    align-items: center
+    img
+        width: 8px
+        height: 8px
+        margin-bottom: 2px
+    div
+        margin-left: 3px
+
+.special-offer__item__result__numb
+    font-family: 'Open Sans'
+    font-weight: 500
+    font-size: 10px
+    line-height: 19px
+    color: rgba(34, 34, 34, 0.5)
+
+.special-offer__item__foto
+    width: 80px
+    height: 100px
+    display: flex
+    img
+        height: 100%
+        margin: auto
+        
